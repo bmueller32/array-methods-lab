@@ -13,24 +13,27 @@ const inventors = [
     { first: 'Lise', last: 'Meitner', year: 1878, passed: 1968 },
     { first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909 }
   ];
-  
+  //?
   // Array.prototype.filter()
   // 1. Filter the array of inventors into a new array containing only the inventors born in the 1500's
-  const year = inventors.filter((inventor) => inventor => 1500);
+  const year = inventors.filter((inventor) => inventor <= 1500);
   
- console.log(inventors)
+  console.log(inventors) 
   // Array.prototype.map()
   // 2. Map the array of the inventors into a new array containing objects with just the first and last names as properties
   // Hint:  Return a new object literal from the callback (don't mutate the object being passed in to map)
+  const firstLast 
   
-  
-  
+  ///correct
   // Array.prototype.sort()
   // 3. Sort the inventors by birth date (year property), in ascending order
+  const years = [1879, 1643, 1564, 1867, 1571, 1473, 1858, 1898, 1815, 1855, 1878, 1829 ];
+  inventors.sort(function(a, b){return a.year - b.year});
+
+   console.log(inventors)
   
-  
-  
-  // Array.prototype.find()
+ //correct
+ // Array.prototype.find()
   // 4. Find the inventor object with the first name of 'Ada'
   const inventorAda = inventors.find(inventor => inventor.first === 'Ada');
   
@@ -99,15 +102,16 @@ const inventors = [
     { text: 'Ramen is my fav food ever', id: 123523 },
     { text: 'Nice Nice Nice!', id: 542328 }
   ];
-  
+  ///correct
   // Array.prototype.find()
   // 10. Find the comment with the id of 823423
+  const kind = comments.find((comment) => comment.id === 823423)
   
-  
-  
+  console.log(kind)
+  //
   // Array.prototype.findIndex()
   // 11. Find the index of the comment with an id of 123523
+  const food = comments.findIndex((comment) => comment.id === 123523)
   
-  
-  
+  console.log()
   
