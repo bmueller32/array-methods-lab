@@ -16,9 +16,9 @@ const inventors = [
   
   // Array.prototype.filter()
   // 1. Filter the array of inventors into a new array containing only the inventors born in the 1500's
+  const year = inventors.filter((inventor) => inventor => 1500);
   
-  
-  
+ console.log(inventors)
   // Array.prototype.map()
   // 2. Map the array of the inventors into a new array containing objects with just the first and last names as properties
   // Hint:  Return a new object literal from the callback (don't mutate the object being passed in to map)
@@ -32,9 +32,11 @@ const inventors = [
   
   // Array.prototype.find()
   // 4. Find the inventor object with the first name of 'Ada'
+  const inventorAda = inventors.find(inventor => inventor.first === 'Ada');
   
   
-  
+
+  console.log(inventorAda)
   // Array.prototype.reduce()
   // 5. How many years did all the inventors live?
   
